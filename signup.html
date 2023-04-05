@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<section id="landing-page" onmousemove="moveBackground(event)">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="./stylelogin.css" />
+<script src="./index.js"></script>
+<script
+src="https://kit.fontawesome.com/492fd5106e.js"
+crossorigin="anonymous"
+></script>
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+(function () {
+  emailjs.init("FH-24DcZWvN7TmYng");
+})();
+</script>
+
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body>
+	<div class="container">
+		<form>
+			<h1>Sign Up</h1>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name">
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email">
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" placeholder="Enter your password">
+			<label for="confirm-password">Confirm Password</label>
+			<input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+			<button type="submit" onclick="validateForm()">Sign Up</button>
+		</form>
+	</div>
+	
+
+	
+	<img src="./assets/circle.svg" class="shape shape--0" />
+	<!-- <img src="./assets/triangle.svg" class="shape shape--1" /> -->
+	<img src="./assets/semi_circle.svg" class="shape shape--2" />
+	<img src="./assets/semi_circle.svg" class="shape shape--3" />
+	<img src="./assets/squiggly.svg" class="shape shape--4" />
+	<img src="./assets/squiggly.svg" class="shape shape--5" />
+	<img src="./assets/circle.svg" class="shape shape--6" />
+	<img src="./assets/triangle.svg" class="shape shape--7" />
+	<img src="./assets/circle.svg" class="shape shape--8" />
+	<script src="signup.js"></script>
+</body>
+</html>
